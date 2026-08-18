@@ -26,6 +26,11 @@ fresh `test-<uuid>@mail7.app` address is generated per test run.
 - `tests/registration.spec.ts` — the "Create account" form (tests 1–6).
 - `tests/email-verification.spec.ts` — the OTP screen (tests 7–10).
 
+## How to run tests
+To run all tests from terminal use `npm test`.
+To run a specific test from terminal use `npx playwright test -g "<test name>"`.
+To run tests using playwright chromium ui use `npx playwright test --ui`.
+
 ## A note on flakiness
 
 These are true end-to-end tests against two live external systems: the
@@ -43,6 +48,3 @@ If a run shows an isolated failure on one of the email round-trip tests
 (7–10, or 5), re-run it on its own first —
 `npx playwright test -g "<test name>"` — before assuming a regression;
 `retries: 1` locally / `2` on CI already absorbs most of this automatically.
-
-To run all tests from terminal use `npm test`.
-To run tests using playwright chromium ui use `npx playwright test --ui`
