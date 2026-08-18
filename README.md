@@ -43,3 +43,6 @@ If a run shows an isolated failure on one of the email round-trip tests
 (7–10, or 5), re-run it on its own first —
 `npx playwright test -g "<test name>"` — before assuming a regression;
 `retries: 1` locally / `2` on CI already absorbs most of this automatically.
+
+To run all tests from terminal use `npm test`.
+To run tests using playwright chromium ui use `npx playwright test --ui`
