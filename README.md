@@ -27,9 +27,9 @@ fresh `test-<uuid>@mail7.app` address is generated per test run.
 - `tests/email-verification.spec.ts` — the OTP screen (tests 7–10).
 
 ## How to run tests
-To run all tests from terminal use `npm test`.
-To run a specific test from terminal use `npx playwright test -g "<test name>"`.
-To run tests using playwright chromium ui use `npx playwright test --ui`.
+To run all tests from terminal use `npm test`.  
+To run a specific test from terminal use `npx playwright test -g "<test name>"`.  
+To run tests using playwright chromium ui use `npx playwright test --ui`.  
 
 ## A note on flakiness
 
